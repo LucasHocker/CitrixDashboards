@@ -81,7 +81,7 @@
       }
     },
     {
-      "name": "Launches",
+      "name": "Actions",
       "tileType": "HEADER",
       "configured": true,
       "bounds": {
