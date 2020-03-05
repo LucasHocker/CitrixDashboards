@@ -792,7 +792,6 @@
           }
         }
       }
-    },
-{"name":"Markdown","tileType":"MARKDOWN","configured":true,"bounds":{"top":0,"left":1064,"width":152,"height":38},"tileFilter":{"timeframe":null,"managementZone":null},"markdown":"## [⬅️](#dashboard;id=81a142d4-3a85-4d26-ab75-658626ee3cac)"}
+    }
   ]
 }
