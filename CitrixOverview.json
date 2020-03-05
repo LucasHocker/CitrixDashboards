@@ -687,6 +687,22 @@
         "managementZone": null
       },
       "markdown": "## [🔍](#dashboard;id=eced0a3a-a8d9-48f1-ba72-1f885e22c5db)"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 684,
+        "left": 1026,
+        "width": 494,
+        "height": 38
+      },
+      "tileFilter": {
+        "timeframe": null,
+        "managementZone": null
+      },
+      "markdown": "## ☞  Compare [MyCompareApp](#dashboard;id=226a2944-3864-4b34-a0e6-d305cdf2f64e)"
     }
   ]
 }
