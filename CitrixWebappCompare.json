@@ -62,7 +62,10 @@
       },
       "tileFilter": {
         "timeframe": null,
-        "managementZone": null
+        "managementZone": {
+          "id": "compareMZid",
+          "name": "compareMZname"
+        }
       },
       "customName": "User Experience Score",
       "query": "select count(userSessionId) AS users, userExperienceScore FROM usersession where useraction.application=\"www.angular.easytravel.com\" group by userExperienceScore",
@@ -80,7 +83,10 @@
       },
       "tileFilter": {
         "timeframe": null,
-        "managementZone": null
+        "managementZone": {
+          "id": "MZid",
+          "name": "MZname"
+        }
       },
       "customName": "User Experience Score",
       "query": "select count(userSessionId) AS users, userExperienceScore FROM usersession where useraction.application=\"Citrix_RUM\" group by userExperienceScore",
@@ -98,7 +104,10 @@
       },
       "tileFilter": {
         "timeframe": null,
-        "managementZone": null
+        "managementZone": {
+          "id": "MZid",
+          "name": "MZname"
+        }
       },
       "filterConfig": {
         "type": "MIXED",
@@ -150,7 +159,10 @@
       },
       "tileFilter": {
         "timeframe": null,
-        "managementZone": null
+        "managementZone": {
+          "id": "compareMZid",
+          "name": "compareMZname"
+        }
       },
       "filterConfig": {
         "type": "MIXED",
@@ -307,6 +319,22 @@
         "timeframe": null,
         "managementZone": null
       }
+    },
+    {
+      "name": "BackButton",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 1178,
+        "width": 38,
+        "height": 38
+      },
+      "tileFilter": {
+        "timeframe": null,
+        "managementZone": null
+      },
+      "markdown": "![BackButton]()"
     }
   ]
 }

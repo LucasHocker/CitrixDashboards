@@ -705,7 +705,7 @@
       "markdown": "## ☞  Compare [MyCompareApp](#dashboard;id=226a2944-3864-4b34-a0e6-d305cdf2f64e)"
     },
     {
-      "name": "Markdown",
+      "name": "BackButton",
       "tileType": "MARKDOWN",
       "configured": true,
       "bounds": {
