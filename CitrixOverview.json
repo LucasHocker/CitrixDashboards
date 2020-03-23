@@ -693,7 +693,7 @@
       "tileType": "MARKDOWN",
       "configured": true,
       "bounds": {
-        "top": 684,
+        "top": 722,
         "left": 1064,
         "width": 494,
         "height": 38
@@ -710,7 +710,7 @@
       "configured": true,
       "bounds": {
         "top": 38,
-        "left": 1520,
+        "left": 1482,
         "width": 38,
         "height": 38
       },
