@@ -553,7 +553,7 @@
       "type": "TABLE"
     },
     {
-      "name": "Markdown",
+      "name": "Actions Drilldown",
       "tileType": "MARKDOWN",
       "configured": true,
       "bounds": {
@@ -569,7 +569,7 @@
       "markdown": "## [🔍](#dashboard;id=38862cbd-8ab4-4e17-81ca-1f43af427ad3)"
     },
     {
-      "name": "Markdown",
+      "name": "Locations Drilldown",
       "tileType": "MARKDOWN",
       "configured": true,
       "bounds": {
@@ -585,12 +585,12 @@
       "markdown": "## [🔍](#dashboard;id=a92423e3-8d52-4226-b12e-c06133acff4d)"
     },
     {
-      "name": "Markdown",
+      "name": "Users Drilldown",
       "tileType": "MARKDOWN",
       "configured": true,
       "bounds": {
         "top": 38,
-        "left": 456,
+        "left": 494,
         "width": 38,
         "height": 38
       },
@@ -673,7 +673,7 @@
       "type": "SINGLE_VALUE"
     },
     {
-      "name": "Markdown",
+      "name": "Overview Drilldown",
       "tileType": "MARKDOWN",
       "configured": true,
       "bounds": {
@@ -689,7 +689,7 @@
       "markdown": "## [🔍](#dashboard;id=eced0a3a-a8d9-48f1-ba72-1f885e22c5db)"
     },
     {
-      "name": "Markdown",
+      "name": "WebApp Comparison",
       "tileType": "MARKDOWN",
       "configured": true,
       "bounds": {
