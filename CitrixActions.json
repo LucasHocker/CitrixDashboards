@@ -52,7 +52,7 @@
                 "timeframe": null,
                 "managementZone": null
             },
-            "markdown": "## [\uD83D\uDD0D](https://MyTenant/#mobileperformanceanalysis;appId=MyAppID)"
+            "markdown": "## [\uD83D\uDD0D](https://MyTenant/#mobileperformanceanalysis;appId=InternalAppID)"
         },
         {
             "name": "BackButton",

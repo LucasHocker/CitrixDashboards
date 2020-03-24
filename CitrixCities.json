@@ -70,7 +70,7 @@
                 "timeframe": null,
                 "managementZone": null
             },
-            "markdown": "## [\uD83D\uDD0D](https://MyTenant/#mobileperformanceanalysis;appId=MyAppID;a=Geolocation)"
+            "markdown": "## [\uD83D\uDD0D](https://MyTenant/#mobileperformanceanalysis;appId=InternalAppID;a=Geolocation)"
         },
         {
             "name": "BackButton",

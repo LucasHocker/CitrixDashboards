@@ -70,7 +70,7 @@
                 "timeframe": null,
                 "managementZone": null
             },
-            "markdown": "## [\uD83D\uDD0D](https://MyTenant/#usersearchoverview;filtrfilterApplication=MyAppID)"
+            "markdown": "## [\uD83D\uDD0D](https://MyTenant/#usersearchoverview;filtrfilterApplication=InternalAppID)"
         },
         {
             "name": "BackButton",
