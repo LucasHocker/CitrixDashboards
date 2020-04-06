@@ -182,52 +182,6 @@
       }
     },
     {
-      "name": "Custom chart",
-      "tileType": "CUSTOM_CHARTING",
-      "configured": true,
-      "bounds": {
-        "top": 456,
-        "left": 0,
-        "width": 304,
-        "height": 228
-      },
-      "tileFilter": {
-        "timeframe": null,
-        "managementZone": null
-      },
-      "filterConfig": {
-        "type": "MIXED",
-        "customName": "Citrix latency",
-        "defaultName": "Custom chart",
-        "chartConfig": {
-          "legendShown": true,
-          "type": "SINGLE_VALUE",
-          "series": [
-            {
-              "metric": "ext:tech.Citrix.citrix_latency",
-              "aggregation": "MAX",
-              "percentile": null,
-              "type": "LINE",
-              "entityType": "PROCESS_GROUP_INSTANCE",
-              "dimensions": [
-                {
-                  "id": "0",
-                  "name": "Process",
-                  "values": [],
-                  "entityDimension": true
-                }
-              ],
-              "sortAscending": false,
-              "sortColumn": true,
-              "aggregationRate": "TOTAL"
-            }
-          ],
-          "resultMetadata": {}
-        },
-        "filtersPerEntityType": {}
-      }
-    },
-    {
       "name": "",
       "tileType": "CUSTOM_CHARTING",
       "configured": true,
