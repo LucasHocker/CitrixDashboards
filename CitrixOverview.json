@@ -7,7 +7,7 @@
   },
   "id": "81a142d4-3a85-4d26-ab75-658626ee3cac",
   "dashboardMetadata": {
-    "name": "Citrix Overview",
+    "name": "${MyTenant} Citrix Overview",
     "shared": true,
     "owner": "lucas.hocker@dynatrace.com",
     "sharingDetails": {
@@ -175,7 +175,7 @@
         "filtersPerEntityType": {
           "MONITORED_ENTITY˟DEVICE_APPLICATION": {
             "SPECIFIC_ENTITIES": [
-              "InternalAppID"
+              "${InternalAppID}"
             ]
           }
         }
@@ -227,7 +227,7 @@
         "filtersPerEntityType": {
           "MONITORED_ENTITY˟DEVICE_APPLICATION": {
             "SPECIFIC_ENTITIES": [
-              "InternalAppID"
+              "${InternalAppID}"
             ]
           }
         }
@@ -279,7 +279,7 @@
         "filtersPerEntityType": {
           "MONITORED_ENTITY˟DEVICE_APPLICATION": {
             "SPECIFIC_ENTITIES": [
-              "InternalAppID"
+              "${InternalAppID}"
             ]
           }
         }
@@ -355,7 +355,7 @@
         "filtersPerEntityType": {
           "MONITORED_ENTITY˟DEVICE_APPLICATION": {
             "SPECIFIC_ENTITIES": [
-              "InternalAppID"
+              "${InternalAppID}"
             ]
           }
         }
@@ -413,7 +413,7 @@
         "filtersPerEntityType": {
           "MONITORED_ENTITY˟DEVICE_APPLICATION": {
             "SPECIFIC_ENTITIES": [
-              "InternalAppID"
+              "${InternalAppID}"
             ]
           }
         }
@@ -434,7 +434,7 @@
         "managementZone": null
       },
       "customName": "Top Actions",
-      "query": "SELECT name, count(name) as actions FROM useraction WHERE application='MyApp' AND name<>\"ICA latency measurement\" GROUP BY name ORDER BY actions DESC",
+      "query": "SELECT name, count(name) as actions FROM useraction WHERE application='${MyApp}' AND name<>\"ICA latency measurement\" GROUP BY name ORDER BY actions DESC",
       "type": "PIE_CHART"
     },
     {
@@ -452,7 +452,7 @@
         "managementZone": null
       },
       "customName": "Slowest Actions",
-      "query": "SELECT name, max(duration) AS slowest FROM useraction WHERE application='MyApp' AND name<>\"ICA latency measurement\" GROUP BY name ORDER BY slowest DESC",
+      "query": "SELECT name, max(duration) AS slowest FROM useraction WHERE application='${MyApp}' AND name<>\"ICA latency measurement\" GROUP BY name ORDER BY slowest DESC",
       "type": "TABLE"
     },
     {
@@ -485,7 +485,7 @@
         "managementZone": null
       },
       "customName": "Slowest Cities",
-      "query": "SELECT usersession.region AS region, usersession.city AS city, max(duration) AS slowest FROM useraction WHERE application='MyApp' AND name<>\"ICA latency measurement\" GROUP BY region,city ORDER BY slowest DESC",
+      "query": "SELECT usersession.region AS region, usersession.city AS city, max(duration) AS slowest FROM useraction WHERE application='${MyApp}' AND name<>\"ICA latency measurement\" GROUP BY region,city ORDER BY slowest DESC",
       "type": "TABLE"
     },
     {
@@ -503,7 +503,7 @@
         "managementZone": null
       },
       "customName": "Slowest Users (actions)",
-      "query": "SELECT usersession.userId AS userId, max(duration) AS slowest, usersession.userExperienceScore AS exp FROM useraction WHERE application='MyApp' AND name<>\"ICA latency measurement\" GROUP BY userId, exp ORDER BY slowest DESC",
+      "query": "SELECT usersession.userId AS userId, max(duration) AS slowest, usersession.userExperienceScore AS exp FROM useraction WHERE application='${MyApp}' AND name<>\"ICA latency measurement\" GROUP BY userId, exp ORDER BY slowest DESC",
       "type": "TABLE"
     },
     {
@@ -569,7 +569,7 @@
         "managementZone": null
       },
       "customName": "Slowest Users (latency)",
-      "query": "SELECT usersession.userId AS userId, avg(duration) AS avg, max(duration) AS max FROM useraction WHERE application='MyApp' AND name=\"ICA latency measurement\" GROUP BY userId ORDER BY avg DESC",
+      "query": "SELECT usersession.userId AS userId, avg(duration) AS avg, max(duration) AS max FROM useraction WHERE application='${MyApp}' AND name=\"ICA latency measurement\" GROUP BY userId ORDER BY avg DESC",
       "type": "TABLE"
     },
     {
@@ -605,7 +605,7 @@
         "managementZone": null
       },
       "customName": "Logins",
-      "query": "select count(name) AS Logins from useraction where application=\"MyApp\" and name='Citrix login'",
+      "query": "select count(name) AS Logins from useraction where application=\"${MyApp}\" and name='Citrix login'",
       "type": "SINGLE_VALUE"
     },
     {
@@ -623,7 +623,7 @@
         "managementZone": null
       },
       "customName": "Logouts",
-      "query": "select count(name) as Logouts from useraction where application=\"MyApp\" and name='Citrix logout'",
+      "query": "select count(name) as Logouts from useraction where application=\"${MyApp}\" and name='Citrix logout'",
       "type": "SINGLE_VALUE"
     },
     {

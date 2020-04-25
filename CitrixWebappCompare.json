@@ -21,7 +21,7 @@
   },
   "tiles": [
     {
-      "name": "MyApp",
+      "name": "${MyApp}",
       "tileType": "HEADER",
       "configured": true,
       "bounds": {
@@ -36,7 +36,7 @@
       }
     },
     {
-      "name": "MyCompareApp",
+      "name": "${MyCompareApp}",
       "tileType": "HEADER",
       "configured": true,
       "bounds": {
@@ -63,12 +63,12 @@
       "tileFilter": {
         "timeframe": null,
         "managementZone": {
-          "id": "compareMZid",
-          "name": "compareMZname"
+          "id": "${compareMZid}",
+          "name": "${compareMZname}"
         }
       },
       "customName": "User Experience Score",
-      "query": "select count(userSessionId) AS users, userExperienceScore FROM usersession where useraction.application=\"www.angular.easytravel.com\" group by userExperienceScore",
+      "query": "select count(userSessionId) AS users, userExperienceScore FROM usersession where useraction.application=\"${MyCompareApp}\" group by userExperienceScore",
       "type": "PIE_CHART"
     },
     {
@@ -84,12 +84,12 @@
       "tileFilter": {
         "timeframe": null,
         "managementZone": {
-          "id": "MZid",
-          "name": "MZname"
+          "id": "${MZid}",
+          "name": "${MZname}"
         }
       },
       "customName": "User Experience Score",
-      "query": "select count(userSessionId) AS users, userExperienceScore FROM usersession where useraction.application=\"Citrix_RUM\" group by userExperienceScore",
+      "query": "select count(userSessionId) AS users, userExperienceScore FROM usersession where useraction.application=\"${MyApp}\" group by userExperienceScore",
       "type": "PIE_CHART"
     },
     {
@@ -105,8 +105,8 @@
       "tileFilter": {
         "timeframe": null,
         "managementZone": {
-          "id": "MZid",
-          "name": "MZname"
+          "id": "${MZid}",
+          "name": "${MZname}"
         }
       },
       "filterConfig": {
@@ -141,7 +141,7 @@
         "filtersPerEntityType": {
           "MONITORED_ENTITY˟DEVICE_APPLICATION": {
             "SPECIFIC_ENTITIES": [
-              "InternalAppID"
+              "${InternalAppID}"
             ]
           }
         }
@@ -160,8 +160,8 @@
       "tileFilter": {
         "timeframe": null,
         "managementZone": {
-          "id": "compareMZid",
-          "name": "compareMZname"
+          "id": "${compareMZid}",
+          "name": "${compareMZname}"
         }
       },
       "filterConfig": {
@@ -204,7 +204,7 @@
         "filtersPerEntityType": {
           "APPLICATION": {
             "SPECIFIC_ENTITIES": [
-              "InternalCompareAppID"
+              "${InternalCompareAppID}"
             ]
           }
         }
@@ -223,8 +223,8 @@
       "tileFilter": {
         "timeframe": null,
         "managementZone": {
-          "id": "MZid",
-          "name": "MZname"
+          "id": "${MZid}",
+          "name": "${MZname}"
         }
       },
       "filterConfig": null,
@@ -243,8 +243,8 @@
       "tileFilter": {
         "timeframe": null,
         "managementZone": {
-          "id": "compareMZid",
-          "name": "compareMZname"
+          "id": "${compareMZid}",
+          "name": "${compareMZname}"
         }
       },
       "filterConfig": null,
@@ -263,8 +263,8 @@
       "tileFilter": {
         "timeframe": null,
         "managementZone": {
-          "id": "compareMZid",
-          "name": "compareMZname"
+          "id": "${compareMZid}",
+          "name": "${compareMZname}"
         }
       },
       "filterConfig": null,
@@ -283,8 +283,8 @@
       "tileFilter": {
         "timeframe": null,
         "managementZone": {
-          "id": "MZid",
-          "name": "MZname"
+          "id": "${MZid}",
+          "name": "${MZname}"
         }
       },
       "filterConfig": null,

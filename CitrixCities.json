@@ -35,7 +35,7 @@
                 "managementZone": null
             },
             "customName": "Actions per City detail",
-            "query": "SELECT usersession.country AS Country, usersession.region AS Region, usersession.city AS City, count(usersession.city) AS actions, min(duration) as min, avg(duration) as avg, max(duration) AS max FROM useraction WHERE application='MyApp' AND name<>\"ICA latency measurement\" GROUP BY Country,Region,City ORDER BY actions DESC",
+            "query": "SELECT usersession.country AS Country, usersession.region AS Region, usersession.city AS City, count(usersession.city) AS actions, min(duration) as min, avg(duration) as avg, max(duration) AS max FROM useraction WHERE application='${MyApp}' AND name<>\"ICA latency measurement\" GROUP BY Country,Region,City ORDER BY actions DESC",
             "type": "TABLE"
         },
         {
@@ -53,7 +53,7 @@
                 "managementZone": null
             },
             "customName": "Latency per City detail",
-            "query": "SELECT usersession.country AS Country, usersession.region AS Region, usersession.city AS City, min(duration) as min, avg(duration) as avg, max(duration) AS max FROM useraction WHERE application='MyApp' AND name=\"ICA latency measurement\" GROUP BY Country,Region,City ORDER BY avg DESC",
+            "query": "SELECT usersession.country AS Country, usersession.region AS Region, usersession.city AS City, min(duration) as min, avg(duration) as avg, max(duration) AS max FROM useraction WHERE application='${MyApp}' AND name=\"ICA latency measurement\" GROUP BY Country,Region,City ORDER BY avg DESC",
             "type": "TABLE"
         },
         {
@@ -70,7 +70,7 @@
                 "timeframe": null,
                 "managementZone": null
             },
-            "markdown": "## [\uD83D\uDD0D](https://MyTenant/#mobileperformanceanalysis;appId=InternalAppID;a=Geolocation)"
+            "markdown": "## [\uD83D\uDD0D](${https://MyTenant}/#mobileperformanceanalysis;appId=${InternalAppID};a=Geolocation)"
         },
         {
             "name": "BackButton",

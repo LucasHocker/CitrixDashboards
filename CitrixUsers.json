@@ -35,7 +35,7 @@
                 "managementZone": null
             },
             "customName": "Slowest Users detail",
-            "query": "SELECT usersession.userId AS userId, name, count(name) AS count, min(duration) AS min, avg(duration) as avg, max(duration) AS max, top(apdexCategory,1) AS apdexCategory FROM useraction WHERE application='MyApp' AND name<>\"ICA latency measurement\" GROUP BY userId, name ORDER BY max DESC",
+            "query": "SELECT usersession.userId AS userId, name, count(name) AS count, min(duration) AS min, avg(duration) as avg, max(duration) AS max, top(apdexCategory,1) AS apdexCategory FROM useraction WHERE application='${MyApp}' AND name<>\"ICA latency measurement\" GROUP BY userId, name ORDER BY max DESC",
             "type": "TABLE"
         },
         {
@@ -53,7 +53,7 @@
                 "managementZone": null
             },
             "customName": "User latency detail",
-            "query": "SELECT usersession.userId AS userId, min(duration) AS min, avg(duration) as avg, max(duration) AS max FROM useraction WHERE application='MyApp' AND name=\"ICA latency measurement\" GROUP BY userId ORDER BY avg DESC",
+            "query": "SELECT usersession.userId AS userId, min(duration) AS min, avg(duration) as avg, max(duration) AS max FROM useraction WHERE application='${MyApp}' AND name=\"ICA latency measurement\" GROUP BY userId ORDER BY avg DESC",
             "type": "TABLE"
         },
         {
@@ -70,7 +70,7 @@
                 "timeframe": null,
                 "managementZone": null
             },
-            "markdown": "## [\uD83D\uDD0D](https://MyTenant/#usersearchoverview;filtrfilterApplication=InternalAppID)"
+            "markdown": "## [\uD83D\uDD0D](${https://MyTenant}/#usersearchoverview;filtrfilterApplication=${InternalAppID})"
         },
         {
             "name": "BackButton",
